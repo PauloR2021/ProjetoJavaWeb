@@ -7,9 +7,10 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+    <head lang="pt">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cadastro de Produtos</title>
+        <link rel="stylesheet" href="css/formulario_style.css">
     </head>
     <body>
     <header>
@@ -29,7 +30,7 @@
             <label for="Quantidade">Quantidade do Produto:</label>
             <input type="number" id="quantidade" name="quantidade" required>
             
-            <label for="preco">Preço do Produto</label>
+            <label for="preco">Preço do Produto:</label>
             <input type="text" id="preco" name="preço" required>
             
             <button type="submit">Salvar Produto</button>
