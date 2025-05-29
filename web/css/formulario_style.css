@@ -1,0 +1,61 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 de mai. de 2025, 07:25:49
+    Author     : Paulo
+*/
+
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding-top: 60px; /*Espaço para o Cabeçalho Fixo*/
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*Aplicando as configurações de Estilo no Cabeçalho do Site HTML*/
+.nav-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 16px;
+    background-color: #555;
+    border-radius: 5px;    
+}
+
+.nav-buttons a:hover{
+    background-color: #777;
+}
+
+/*Aplicando as Configurações de Estilo no Formulário*/
+form{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+label,input,textarea{
+    display:block;
+    width:100%;
+    margin-bottom: 10px;
+}
+input, textarea{
+    padding: 8px;
+}
+button{
+    padding: 10px 20px;
+}
