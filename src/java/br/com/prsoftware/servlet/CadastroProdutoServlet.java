@@ -22,17 +22,29 @@ public class CadastroProdutoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request , HttpServletResponse response)  
             throws ServletException, IOException {
 
-        Produto p = new Produto(); 
-        p.setDescricao(request.getParameter("descricao"));
-        p.setQuantidade(Integer.parseInt(request.getParameter("quantidade")));
-        p.setPreco(Double.parseDouble(request.getParameter("preco")));
+       try {
+            String descricao = request.getParameter("descricao");
+            int quantidade = Integer.parseInt(request.getParameter("quantidade"));
+            
+            // Preço vindo como texto (ex: "1.234,56"), precisa normalizar
+            String precoStr = request.getParameter("preco");
+            precoStr = precoStr.replace(".", "").replace(",", ".");
+            double preco = Double.parseDouble(precoStr);
 
-        try {
+            Produto p = new Produto();
+            p.setDescricao(descricao);
+            p.setQuantidade(quantidade);
+            p.setPreco(preco);
+
             ProdutoDAO dao = new ProdutoDAO();
             dao.cadastrar(p);
+
             response.sendRedirect("index.html");
-        } catch(Exception e) {
-            throw new ServletException(e);
+            
+        } catch (NumberFormatException e) {
+            response.getWriter().println("Erro no formato de número (quantidade ou preço).");
+        } catch (Exception e) {
+            throw new ServletException("Erro ao cadastrar produto: " + e.getMessage(), e);
         }
     }
 }
