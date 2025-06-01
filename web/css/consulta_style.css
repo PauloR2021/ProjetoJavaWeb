@@ -15,6 +15,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     --cor-texto-links: #007bff;
     --cor-texto-links-hover: #0056b3;
     --cor-header-texto: white;
+    --cor-tabela-header: #343a40;
+    --cor-tabela-header-texto: white;
+    --cor-linha-par: #f9f9f9;
+    --cor-linha-impar: #ffffff;
+    
 }
 
 body{
@@ -71,4 +76,27 @@ input[type="submit"]:hover{
 
 .nav-buttons a:hover{
     background-color: var(--cor-texto-links-hover)
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+table th, table td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+table th{
+    background-color: var(--cor-tabela-header);
+    color: var(--cor-tabela-header-texto);
+}
+table tr:nth-child(even){
+    background-color: var(--cor-linha-par);
+}
+table tr:nth-child(odd){
+    background-color: var(--cor-linha-impar);
 }
