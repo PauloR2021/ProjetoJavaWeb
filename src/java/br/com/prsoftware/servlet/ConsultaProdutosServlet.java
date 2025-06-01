@@ -1,7 +1,12 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ *
+ * @author Paulo
+ * 
+ * Servlet responsavel por chamar os métodos de Consulta no banco de dados
  */
+
 package br.com.prsoftware.servlet;
 
 import br.com.prsoftware.dao.ProdutoDAO;
@@ -15,12 +20,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- *
- * @author Paulo
- * 
- * Criando a Classe de consultar os dados no Banco e trazer para o HTML
- */
 @WebServlet("/consultar")
 public class ConsultaProdutosServlet  extends HttpServlet{
     

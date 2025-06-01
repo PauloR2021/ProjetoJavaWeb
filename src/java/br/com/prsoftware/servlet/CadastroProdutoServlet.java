@@ -1,7 +1,12 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ *
+ * @author Paulo
+ * 
+ * Servlet responsavel por chamar os métodos de cadastrar os dados no banco de dados
  */
+
 package br.com.prsoftware.servlet;
 
 import br.com.prsoftware.dao.ProdutoDAO;
@@ -30,6 +35,7 @@ public class CadastroProdutoServlet extends HttpServlet {
             String precoStr = request.getParameter("preco");
             precoStr = precoStr.replace(".", "").replace(",", ".");
             double preco = Double.parseDouble(precoStr);
+            
 
             Produto p = new Produto();
             p.setDescricao(descricao);

@@ -1,14 +1,13 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package br.com.prsoftware.model;
-
-/**
  *
  * @author Paulo
  * Criando a Classe do Contrutor dos Dados para ser Adicionado
  */
+package br.com.prsoftware.model;
+
+
 
 public class Produto {
     

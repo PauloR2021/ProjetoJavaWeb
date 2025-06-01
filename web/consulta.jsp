@@ -1,7 +1,14 @@
+<!-- HTML Responsável por retornar as consulta do Banco de Dados para o Usuário
+Desenvolvido: Paulo Ricardo
+Data: 31/05/2025
+-->
+
+
 <%@ page import="java.util.List" %>
 <%@ page import="br.com.prsoftware.model.Produto" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 <%
+    /*Criando uma Lista trazendo os dados do Banco*/
     List<Produto> lista = (List<Produto>) request.getAttribute("produtos");
 %>
 
@@ -18,7 +25,6 @@
     <header class="cabecalho">
         <div class="nav-buttons">
             <a href="index.html">Cadastrar Produto</a>
-            <a href="consulta.jsp">Consultar Produtos</a>
         </div>
     </header>
 

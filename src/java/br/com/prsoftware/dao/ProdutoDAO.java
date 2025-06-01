@@ -1,3 +1,12 @@
+/**
+ *
+ * @author Paulo
+ * 
+ * Class responável pelas funções do banco de dados
+ * Insert e Select
+ */
+
+
 package br.com.prsoftware.dao;
 
 import br.com.prsoftware.env.EnvLoader;

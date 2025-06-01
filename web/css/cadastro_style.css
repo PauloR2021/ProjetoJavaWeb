@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : Paulo
 */
 
-
+/*Criando Váriaveis de cores*/
 :root{
     --cor-body: #f2f2f2;
     --cor-titulo: #333;
@@ -19,6 +19,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     --cor-header-texto: white;
 }
 
+/*Editando o Corpo do HTML*/
 body{
     font-family: Arial,sans-serif;
     background-color: var(--cor-body);
@@ -26,6 +27,7 @@ body{
     padding: 20px;
 }
 
+/*Editando o Cabecalho do HTML*/
 .cabecalho{
     background-color: var(--cor-body);
     color: var(--cor-header-texto);
@@ -33,11 +35,13 @@ body{
     text-align: center;
 }
 
+/*Editando o Titulo que está no Meio do HTML*/
 h1{
     color: var(--cor-titulo);
     text-align: center;
 }
 
+/*Editando o Container responsável por conter o conteudo principal do HTML*/
 .contaniner{
     background-color: var(--cor-container);
     padding: 30px;
@@ -47,6 +51,7 @@ h1{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/*Editando o Formulario do HTML*/
 label{
     font-weight: bold;
     margin-right: 10px;
@@ -72,6 +77,7 @@ input[type="submit"]:hover{
     background-color: var(--cor-input-hover);
 }
 
+/*Editando os botões de Navegação do HTML*/
 .nav-buttons{
     margin-bottom: 20px;
 }

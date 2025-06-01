@@ -1,6 +1,12 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ *
+ *
+ * @author Paulo
+ * 
+ * Class responsavel por chamar os dados do ENV, para sincronizar o Banco de Dados
+ * 
  */
 package br.com.prsoftware.env;
 
@@ -9,12 +15,6 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
-/**
- *
- * @author Paulo
- * 
- * Criando uma Classe para ler o Arquivo .env
- */
 public class EnvLoader {
     private static final Properties props = new Properties();
 
