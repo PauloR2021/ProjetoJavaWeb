@@ -8,6 +8,7 @@ import br.com.prsoftware.dao.ProdutoDAO;
 import br.com.prsoftware.model.Produto;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -20,6 +21,7 @@ import java.util.List;
  * 
  * Criando a Classe de consultar os dados no Banco e trazer para o HTML
  */
+@WebServlet("/consultar")
 public class ConsultaProdutosServlet  extends HttpServlet{
     
     @Override
@@ -33,7 +35,7 @@ public class ConsultaProdutosServlet  extends HttpServlet{
             List<Produto> lista = dao.listar();
             request.setAttribute("produtos", lista);
             //Retornando a Lista para o HTML de Consulta
-            RequestDispatcher rd = request.getRequestDispatcher("resultado.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher("consulta.jsp");
             rd.forward(request, response);
         }catch (Exception e){
             throw new ServletException(e);

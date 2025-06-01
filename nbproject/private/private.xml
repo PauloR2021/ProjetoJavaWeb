@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/web/index.jsp</file>
-            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/web/css/formulario_style.css</file>
+            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/web/index.html</file>
+            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/src/java/br/com/prsoftware/dao/ProdutoDAO.java</file>
+            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/src/java/br/com/prsoftware/servlet/CadastroProdutoServlet.java</file>
+            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/src/java/br/com/prsoftware/env/EnvLoader.java</file>
+            <file>file:/C:/Temp/Java%20Web/ProjetoJavaWeb/web/WEB-INF/.env</file>
         </group>
     </open-files>
 </project-private>
